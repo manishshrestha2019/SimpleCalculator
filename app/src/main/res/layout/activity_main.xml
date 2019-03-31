@@ -14,17 +14,16 @@
         android:textColor="#121111"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calculator"
+        android:text="Calculator"/>
 
-        />
-
-    <EditText
-        android:textSize="30sp"
+    <TextView
+        android:id="@+id/tvOut"
+        android:textSize="50sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/etNums"
-        android:hint="1+1"
-        android:gravity="right"/>
+        android:hint="0"
+        android:gravity="right"
+        android:inputType="numberDecimal"/>
 
 
     <GridLayout
@@ -32,10 +31,11 @@
         android:layout_height="match_parent"
         android:rowCount="4"
         android:columnCount="4">
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/etNum7"
+            android:id="@+id/btn7"
             android:textSize="50sp"
             android:text="7"
             android:textAlignment="center"
@@ -47,7 +47,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/etNum8"
+            android:id="@+id/btn8"
             android:textSize="50sp"
             android:text="8"
             android:textColor="#1271BD"
@@ -58,7 +58,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/etNum9"
+            android:id="@+id/btn9"
             android:textSize="50sp"
             android:text="9"
             android:textColor="#1271BD"
@@ -79,7 +79,7 @@
             android:textColor="#1271BD"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/etNum4"
+            android:id="@+id/btn4"
             android:textSize="50sp"
             android:text="4"
             android:textAlignment="center"
@@ -91,7 +91,7 @@
             android:textColor="#1271BD"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/etNum5"
+            android:id="@+id/btn5"
             android:textSize="50sp"
             android:text="5"
             android:layout_columnWeight="1"
@@ -102,7 +102,7 @@
             android:textColor="#1271BD"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/etNum6"
+            android:id="@+id/btn6"
             android:textSize="50sp"
             android:text="6"
             android:layout_columnWeight="1"
@@ -110,7 +110,6 @@
 
             />
         <Button
-
             android:id="@+id/btnMul"
             android:textSize="50sp"
             android:layout_width="wrap_content"
@@ -123,7 +122,7 @@
             android:textColor="#1271BD"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/etNum1"
+            android:id="@+id/btn1"
             android:textSize="50sp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
@@ -134,7 +133,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/etNum2"
+            android:id="@+id/btn2"
             android:textSize="50sp"
             android:text="2"
             android:textColor="#1271BD"
@@ -145,7 +144,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/etNum3"
+            android:id="@+id/btn3"
             android:textSize="50sp"
             android:text="3"
             android:textColor="#1271BD"
@@ -165,7 +164,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/etNum."
+            android:id="@+id/btnDot."
             android:textSize="50sp"
             android:text="."
             android:textAlignment="center"
@@ -182,10 +181,8 @@
             android:textColor="#1271BD"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-
-            />
+        />
         <Button
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnC"
@@ -193,7 +190,6 @@
             android:text="C"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-
             />
         <Button
             android:id="@+id/btnSub"
@@ -210,6 +206,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="="
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+        <Button
+            android:id="@+id/btnDel"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Del"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"/>
 
